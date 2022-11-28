@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume</title>
+    <link rel="stylesheet" href="stayle.css">
+<link rel="stylesheet" href="indes.pug">
+</head>
+<body>
+  <div class="main">
+
+    <div class="main-div">
+        <div class="div-left">
+            <div class="circle"><img src="photo_2022-09-17_16-47-31.jpg" alt="" class="img-1">
+            </div>
+<div class="oval"></div>
+<div class="texting-div">
+<h3 class="margin-text">cantact</h3>
+<h4 class="margin-text">phon number_09352201013</h4>
+<h4 class="margin-text">countries I have been(pershia-dubi-germany-usa)</h4>
+<h2 class="margin-text">my coding progress</h2>
+<div class="progress">
+    <small class="progress-score1">html</small> <small class="progress-score">87%</small>
+<div class="main-progressdiv">
+    <div class="progress-div"></div>
+</div>
+</div>
+<div class="progress">
+    <small class="progress-score1">css</small>     <small class="progress-score">80%</small> 
+    <div class="main-progressdiv">
+        <div class="progress-div2"></div>
+    </div>
+    </div>
+    <div class="progress">
+        <small class="progress-score1">js</small>     <small class="progress-score">11%</small> 
+        <div class="main-progressdiv">
+            <div class="progress-div3"></div>
+        </div>
+        </div>
+</div>
+<div class="img-div">
+  <button class="pacman-button">
+   <a href="https://martianourih.github.io/spacediscoverymartia.come/"> <span class="button-label">click this text to see my ather website</span></a>
+    <div class="ghost"></div>
+    <div class="pacman"></div>
+  </button>
+</div>
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>
+        </div>
+                <div class="div-raight">
+                    <div class="div-circle">
+                        <div>
+                          <button class="glow-on-hover" type="button">hi my name is Martia and this is my resume </button>
+                            <div class="move">enjoy pls :)</div>
+                        </div>
+                    </div>
+                    <div class="info">
+<div class="circle2"></div>
+<div class="circle-line2"></div> <div><h2 class="circle-text">my skills</h2> </div><p class="p-div">well i can say im pretty good at english 
+    <br/> i was playing games befor coding and  iwas one of the best playrs in my countrie well not now back then, so far 
+    <br/>my coding prosses is good and i can cook well <a href="https://martianourih.github.io/spacediscoverymartia.come/">and i wrote aboute black holes here is a link to my ather website</a>
+    <br/>
+</p>
+<div class="line2"></div>
+<div class="a1"><p>this's a picture of my website</p></div>
+  <div><img class="a2" src="photo_2022-09-18_11-29-22.jpg" alt=""></div>
+</html>
+                    </div>
+        </div>
+    </div>
+    <script>var isTop = true;
+        var menuIsOpen = false;
+      
+        var menuIcon = $('.va_menu_icon');
+      
+        var one = $('#one');
+        var two = $('#two');
+        var three = $('#three');
+        var four = $('#four');
+      
+        menuIcon.click(function() {
+          if (isTop === true) {
+            $('#nav').animate({ top: '50%', left: '50%' }, 400);
+            $('.content').animate({ opacity: '0' }, 700);
+            showBubbles();
+            isTop = false;
+          } else {
+            if (menuIsOpen === false) {
+              showBubbles();
+            } else {
+              hideBubbles();
+            }
+          }
+        });
+      
+        function showBubbles() {
+          menuIcon.addClass('is-active');
+      
+          one.animate({ opacity: '1' }, 10);
+          two.animate({ opacity: '1' }, 10);
+          three.animate({ opacity: '1' }, 10);
+          four.animate({ opacity: '1' }, 10);
+      
+          one.animate({ left: '140px' }, 110);
+          two.animate({ top: '140px' }, 200);
+          one.animate({ left: '130px' }, 100);
+          three.animate({ left: '-65px' }, 300);
+          two.animate({ top: '130px' }, 210);
+          four.animate({ top: '-65px' }, 400);
+          three.animate({ left: '-55px' }, 310);
+          four.animate({ top: '-55px' }, 400);
+      
+          menuIsOpen = true;
+        }
+      
+        function hideBubbles() {
+          menuIcon.removeClass('is-active');
+      
+          setTimeout(function() {
+            $('#nav').animate({ top: '100px', left: '100px' }, 400);
+            $('.content').animate({ opacity: '1' }, 900);
+          }, 500);
+          four.animate({ top: '-65px' }, 400);
+          three.animate({ left: '-65px' }, 300);
+          four.animate({ top: '50%' }, 400);
+          two.animate({ top: '140px' }, 200);
+          three.animate({ left: '50%' }, 310);
+          one.animate({ left: '140px' }, 110);
+          two.animate({ top: '50%' }, 200);
+          one.animate({ left: '50%' }, 110);
+      
+          menuIsOpen = false;
+          isTop = true
+        }
+      
+        $('.bubble').click(function() {
+          menuIcon.removeClass('is-active');
+          hideBubbles();
+          setTimeout(function() {
+            $('#nav').animate({ top: '100px', left: '100px' }, 400);
+          }, 500);
+          isTop = true;
+        });
+      
+        one.click(function() {
+          moveToPage('0', '100vw', '-100vw', '-100vw');
+        });
+      
+        two.click(function() {
+          moveToPage('100vw', '0', '-100vw', '-100vw');
+        });
+      
+        three.click(function() {
+          moveToPage('100vw', '100vw', '0', '-100vw');
+        });
+      
+        four.click(function() {
+          moveToPage('100vw', '100vw', '-100vw', '0');
+        });
+      
+        function moveToPage(firstLeft, secondTop, thirdLeft, fourthTop) {
+          $('.first').animate({ left: firstLeft }, 400);
+          $('.second').animate({ top: secondTop }, 400);
+          $('.third').animate({ left: thirdLeft }, 400);
+          $('.fourth').animate({ top: fourthTop }, 400);
+      
+          isTop = true;
+        }</script>
+</body>
+</html>
